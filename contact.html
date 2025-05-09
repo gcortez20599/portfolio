@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me - Gisselle Cortez</title>
+  <link rel="stylesheet" href="https://use.typekit.net/jqs0yae.css" />
+
+  <style>
+    /* ============== COLORS ============== */
+    :root {
+      --cream: #fdf6e3;
+      --olive: #6C6A43;
+      --pink: #BF3556;
+      --pink-hover: #CB438B;
+      --pink-dark: #4D3449;
+      --text: #fff;
+      --border: #ccc;
+    }
+
+    /* ============== GLOBAL RESET ============== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+      background-color: var(--cream);
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* ============== NAVIGATION ============== */
+    nav {
+  background-color: var(--olive);
+  color: var(--cream);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px; /* Add spacing around */
+}
+
+    nav .logo img {
+  width: 200px;  /* Adjust the size */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+
+    nav ul {
+      list-style-type: none;
+      float: right;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--pink);
+      border-radius: 5px;
+    }
+
+    /* ============== CONTACT SECTION ============== */
+    #contact {
+      padding: 50px 20px 80px;
+      text-align: center;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 280px;
+      text-align: left;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: "above-the-beyond", sans-serif;
+    }
+
+    .contact-info p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: var(--pink);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      align-self: center;
+      margin-top: 1rem;
+    }
+
+    .contact-form button:hover {
+      background-color: var(--pink-hover);
+      color: var(--pink-dark);
+    }
+
+    /* ============== FOOTER ============== */
+    footer {
+      background-color: var(--olive);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 1.4rem;
+      width: 100%;
+    }
+
+    /* ============== RESPONSIVE ============== */
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+
+      nav ul {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      nav .logo {
+        float: none;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Logo–Refinements.ai" alt="Logo" />
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="contact">
+      <div class="contact-wrapper">
+        <!-- Left: Let's Collab -->
+        <div class="contact-info">
+          <h2>Let's Collab</h2>
+          <p>Phone: 708-698-6926</p>
+          <p>Email: gcgisselle1@gmail.com</p>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form">
+          <h2>Contact Me</h2>
+          <form action="your-server-endpoint" method="POST">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone Number" />
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gisselle Cortez. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

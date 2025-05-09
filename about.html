@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Gisselle Cortez</title>
+  <link rel="stylesheet" href="https://use.typekit.net/jqs0yae.css" />
+  <style>
+    /* ===========================
+       ROOT VARIABLES
+    =========================== */
+    :root {
+      --cream: #fdf6e3;
+      --olive: #6C6A43;
+      --pink: #BF3556;
+      --pink-hover: #CB438B;
+      --pink-dark: #4D3449;
+      --text: #fff;
+      --border: #ccc;
+    }
+
+    /* ===========================
+       GLOBAL RESET + TYPOGRAPHY
+    =========================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: #333;
+      line-height: 1.6;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* ===========================
+       NAVIGATION
+    =========================== */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   
+      background-color: var(--olive);
+      color: var(--cream);
+    }
+
+    nav .logo img {
+  width: 200px;  /* Adjust the size */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--pink);
+      border-radius: 5px;
+    }
+
+    /* ===========================
+       FORMS
+    =========================== */
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    /* ===========================
+       BUTTONS
+    =========================== */
+    button {
+      background-color: var(--pink);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--pink-hover);
+      color: var(--pink-dark);
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background-color: var(--olive);
+      color: white;
+      text-align: center;
+      padding: 1.4rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* ===========================
+       ABOUT PAGE
+    =========================== */
+    #about {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: var(--cream);
+      color: #333;
+    }
+
+    #about h2 {
+      font-size: 2.8rem;
+      font-family: "above-the-beyond", sans-serif;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about-content img {
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content p {
+      font-family: forma-djr-text, sans-serif;
+      font-style: normal;
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #444;
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Logo–Refinements.ai" alt="Logo" />
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/me2.jpg" alt="me" />
+      <p>I'm Gisselle Cortez — a creative developer and designer who brings ideas to life through code and visuals. From websites to motion graphics and branding, I love working across digital mediums to create thoughtful, engaging experiences. My work blends function, design, and a little bit of fun.</p>
+      <p>I focus on building simple, yet elegant digital experiences with a passion for coding and a keen eye for design. I'm constantly learning and evolving as a developer to stay on top of new trends and tools in the tech space.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gisselle Cortez. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
